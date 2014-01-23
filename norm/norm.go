@@ -65,7 +65,7 @@ func expMeanLogScaled(f []float64) []float64 {
 	return f
 }
 
-// quantileR7 returns the pth quantile of v according the th R-7 method.
+// quantileR7 returns the pth quantile of v according the R-7 method.
 // http://en.wikipedia.org/wiki/Quantile#Estimating_the_quantiles_of_a_population
 func quantileR7(v []float64, p float64) float64 {
 	sort.Float64s(v)
