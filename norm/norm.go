@@ -69,7 +69,7 @@ func expMeanLogScaled(f []float64) []float64 {
 // http://en.wikipedia.org/wiki/Quantile#Estimating_the_quantiles_of_a_population
 func quantileR7(v []float64, p float64) float64 {
 	sort.Float64s(v)
-	if p == 1 {
+	if p == 1 || len(v) == 1 {
 		return v[len(v)-1]
 	}
 	h := float64(len(v)-1) * p
