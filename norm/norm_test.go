@@ -5,13 +5,13 @@
 package norm_test
 
 import (
-	"code.google.com/p/biogo.rnaseq/norm"
-
 	"fmt"
 	"math"
 	"math/rand"
 	"os"
 	"testing"
+
+	"github.com/biogo/rnaseq/norm"
 )
 
 func random(n int, m, s float64) []float64 {
